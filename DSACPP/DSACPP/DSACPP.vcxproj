@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{cf8ba65f-8f0b-4ffd-9caa-202733a1d5bd}</ProjectGuid>
-    <RootNamespace>BSTree</RootNamespace>
+    <ProjectGuid>{3caecc1e-801b-45f0-9dce-b87317352bb2}</ProjectGuid>
+    <RootNamespace>DSACPP</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Vector</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -139,7 +140,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BSTree.cpp" />
+    <ClInclude Include="Vector.h" />
+    <ClInclude Include="vector_constructor_by_copying.h" />
+    <ClInclude Include="vector_implementation.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
