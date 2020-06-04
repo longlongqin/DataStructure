@@ -18,10 +18,10 @@
     <ClInclude Include="Vector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="vector_constructor_by_copying.h">
+    <ClInclude Include="permute.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="vector_implementation.h">
+    <ClInclude Include="Include_Header.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
