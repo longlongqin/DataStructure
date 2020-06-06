@@ -140,6 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Fib.h" />
     <ClInclude Include="Include_Header.h" />
     <ClInclude Include="permute.h" />
     <ClInclude Include="Vector.h" />
