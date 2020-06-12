@@ -58,6 +58,35 @@ ListNodePosi<T> List<T>::find(T const& e) const
 	return find(e, size_, last());
 }
 
+template<class T>
+ListNodePosi<T> List<T>::search(T const& e, int n, ListNodePosi<T> p) const
+{
+	ListNodePosi<T> position = p;
+	while (n-- >= 0)
+	{
+		if (p->data_ > e)
+			p = p->pred_;
+		else if(p->data_ <= e)
+			break;
+	}
+	return p;
+}
 
+template<class T>
+ListNodePosi<T> List<T>::selectMax(ListNodePosi<T> p, int n)
+{
+	ListNodePosi<T> max = p;
+	for (int i = 1; i < n; ++i)
+	{
+		if (p->succ_->data_ >= max)
+			max = p->succ_;
+		p = p->succ_;
+	}
+	return max;
+}
 
-
+template<class T>
+ListNodePosi<T> List<T>::selectMax()
+{
+	return selectMax(header_->succ_, size_);
+}

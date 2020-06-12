@@ -4,3 +4,5 @@
 #include "Writable_access.cpp"
 #include "constructor.cpp"
 #include "destructor.cpp"
+#include "traverse.cpp"
+#include "reverse.cpp"
