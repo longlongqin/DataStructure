@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DSACPP", "DSACPP\DSACPP.vcxproj", "{3CAECC1E-801B-45F0-9DCE-B87317352BB2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vector", "DSACPP\DSACPP.vcxproj", "{3CAECC1E-801B-45F0-9DCE-B87317352BB2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "List", "List\List.vcxproj", "{ECBADD10-6BCA-4395-870B-E2B384186E56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,14 @@ Global
 		{3CAECC1E-801B-45F0-9DCE-B87317352BB2}.Release|x64.Build.0 = Release|x64
 		{3CAECC1E-801B-45F0-9DCE-B87317352BB2}.Release|x86.ActiveCfg = Release|Win32
 		{3CAECC1E-801B-45F0-9DCE-B87317352BB2}.Release|x86.Build.0 = Release|Win32
+		{ECBADD10-6BCA-4395-870B-E2B384186E56}.Debug|x64.ActiveCfg = Debug|x64
+		{ECBADD10-6BCA-4395-870B-E2B384186E56}.Debug|x64.Build.0 = Debug|x64
+		{ECBADD10-6BCA-4395-870B-E2B384186E56}.Debug|x86.ActiveCfg = Debug|Win32
+		{ECBADD10-6BCA-4395-870B-E2B384186E56}.Debug|x86.Build.0 = Debug|Win32
+		{ECBADD10-6BCA-4395-870B-E2B384186E56}.Release|x64.ActiveCfg = Release|x64
+		{ECBADD10-6BCA-4395-870B-E2B384186E56}.Release|x64.Build.0 = Release|x64
+		{ECBADD10-6BCA-4395-870B-E2B384186E56}.Release|x86.ActiveCfg = Release|Win32
+		{ECBADD10-6BCA-4395-870B-E2B384186E56}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
