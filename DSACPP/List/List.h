@@ -1,5 +1,6 @@
 #ifndef DSACPP_LIST_LIST_H_
 #define DSACPP_LIST_LIST_H_
+
 #include "ListNode.h"
 
 template<class T>
@@ -61,6 +62,7 @@ public:
 	void traverse(VST&);  //遍历，依次实施visit操作（函数对象，可全局性修改）
 
 };
+
 
 
 #include "member_function_implement.h"

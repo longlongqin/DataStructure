@@ -21,9 +21,16 @@
   <ItemGroup>
     <ClInclude Include="List.h" />
     <ClInclude Include="ListNode.h" />
+    <ClInclude Include="member_function_implement.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="cpp.hint" />
+    <ClCompile Include="constructor.cpp" />
+    <ClCompile Include="destructor.cpp" />
+    <ClCompile Include="protected_function.cpp" />
+    <ClCompile Include="read_only_access.cpp" />
+    <ClCompile Include="reverse.cpp" />
+    <ClCompile Include="traverse.cpp" />
+    <ClCompile Include="Writable_access.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
