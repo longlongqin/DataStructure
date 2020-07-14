@@ -154,3 +154,8 @@ void copy(int x, int y) //在函数的定义（实现）处给出形参的标识
 }
 ```
 
+# 第四章 栈与队列
+
+1.`__int8`, `__int16`, `__int32`, `__int64`的区别
+
+参考：https://docs.microsoft.com/en-us/cpp/cpp/int8-int16-int32-int64?view=vs-2019
