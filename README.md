@@ -96,7 +96,7 @@
    1. 类似于类模板(在非推断的c++ 17上下文中)，在使用别名模板时**需要显式地提供模板参数列表**。
 
       ```cpp
-      ListNodePosi&lt;single-type-template-argument&gt; ...;22
+      ListNodePosi<single-type-template-argument> ...;
       ```
 
    2. 在ListNode类模板的声明和定义中，名称ListNodePosi还不知道，但是已经大量使用了。
