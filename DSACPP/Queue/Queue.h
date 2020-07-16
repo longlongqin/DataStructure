@@ -55,7 +55,7 @@ void simulate(int nWin, int servTime) //按照指定窗口数，服务总时间模拟银行业务
 	} //for
 	delete[] windows; //释放所有队列（此前，~List会自动清空队列）
 }
-void bestWindow(Queue<Customer> windows[], int nWin) //在这里约定：队列最短则为最优队列
+int bestWindow(Queue<Customer> windows[], int nWin) //在这里约定：队列最短则为最优队列
 {
 	int minsize = windows[0].size();
 	int optiWin = 0; //最优队列（初始为第0个队列是最优）
