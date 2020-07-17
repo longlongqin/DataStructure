@@ -28,7 +28,7 @@
 
 //来自父亲的引用
 #define FromParentTo(x)	\
-	(IsRoot(x) ? root_ : ((IsLChild(x) ? x.parent_->rc_ : x.parent_->lc_))
+	(IsRoot(x) ? root_ : (IsLChild(x) ? x.parent_->rc_ : x.parent_->lc_))
 
 
 #endif

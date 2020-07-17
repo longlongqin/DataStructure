@@ -7,5 +7,6 @@
 具体原理，请看：https://zhuanlan.zhihu.com/p/147623943 （方法2）*/
 
 #include "BinNode.CPP"
+#include "BinTree.cpp"
 
 #endif
