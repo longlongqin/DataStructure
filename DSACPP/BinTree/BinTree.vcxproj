@@ -140,10 +140,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="BinNode.h" />
+    <ClInclude Include="BinTree.h" />
+    <ClInclude Include="release.h" />
     <ClInclude Include="StateJudge.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BinNode.cpp" />
+    <ClCompile Include="BinTree.cpp" />
     <ClCompile Include="IncludedImplementCpp.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

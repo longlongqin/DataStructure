@@ -21,6 +21,12 @@
     <ClInclude Include="StateJudge.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BinTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="release.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BinNode.cpp">
@@ -28,6 +34,9 @@
     </ClCompile>
     <ClCompile Include="IncludedImplementCpp.h">
       <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BinTree.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

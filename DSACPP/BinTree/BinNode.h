@@ -36,7 +36,7 @@ public:
 	//约定，在插入新节点之前，当前节点尚无左、或 右 孩子
 	BinNodePosi insertAsLC(const T& e); // 作为当前节点的左孩子插入新节点
 	BinNodePosi insertAsRC(const T& e); // 作为当前节点的右孩子插入新节点
-	BinNodePosi succ(); //取当前节点的直接后继
+	BinNodePosi succ(); //取当前节点的直接后继（中序遍历中）
 
 	template<typename VST> void travLevel(VST&); // 子树的层次遍历
 	template<typename VST> void travPre(VST&);   // 子树的先序遍历
