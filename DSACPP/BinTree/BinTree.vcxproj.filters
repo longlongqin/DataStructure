@@ -27,6 +27,12 @@
     <ClInclude Include="release.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="traversal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="reconsitution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BinNode.cpp">

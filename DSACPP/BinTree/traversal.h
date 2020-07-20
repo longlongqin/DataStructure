@@ -2,8 +2,9 @@
 #define DSACPP_BINTREE_TRAVERSAL_H
 #include "BinTree.h"
 #include <stack>
+#include <queue>
 
-/******************************遍历：迭代版*********************************/
+/******************************遍历：递归版*********************************/
 
 //1.先序遍历
 template<typename T, typename VST> //元素类型、操作器
@@ -35,7 +36,7 @@ void travPost_R(BinNodePosi<T> x, VST& visit)
 	visit(x->data_);
 }
 
-/******************************遍历：递归版*********************************/
+/******************************遍历：迭代版*********************************/
 
 //1.先序遍历（版本1）
 template<typename T, typename VST>
@@ -144,7 +145,7 @@ void travIn_I3(BinNodePosi<T> x, VST& visit) //无需辅助栈
 		{
 			x = x->lc_; //深入遍历左子树
 		}
-		else //否则——无左子树 或者 刚刚 回溯
+		else //否则 —— 无左子树 或者 刚刚 回溯
 		{
 			visit(x->data_); //访问该节点
 			if (HasRChild(*x)) //如果该节点有右子树，
@@ -192,11 +193,30 @@ void travPost_I(BinNodePosi<T> x, VST& visit)
 	{
 		if (S.top() != x->parent_) //若栈顶元素不是 当前节点的父节点，（那必然是其右兄弟（或者是它自己，如根节点的时候））则
 		{
-			gotoHLVFL(S); // 转向器右兄弟所在子树（包含右兄弟），找到HLVFL
+			gotoHLVFL(S); // 转向其右兄弟所在子树（包含右兄弟），找到HLVFL
 		}
 		//当栈顶元素是当前节点的父节点 或者 找到HLVFL之后
 		x = S.pop(); //弹出栈顶元素（该栈顶元素为前一节点的直接后继）
 		visit(x); //并访问它
+	}
+}
+
+//层次遍历：迭代版
+template<typename T, typename VST> //元素类型、操作器
+void travLevel(BinNodePosi<T> x, VST& visit)
+{
+	std::queue<BinNodePosi<T>> Q; //辅助队列
+	Q.push(x); //根节点入队
+	
+	while (!Q.empty()) //队列不空时
+	{
+		x = Q.pop();  //取出队首节点
+		visit(x->data_); //并访问
+
+		if(HasLChild(*x)) //如果有左孩子，则左孩子入队
+			Q.push(x->lc_);
+		if(HasRChild(*x)) //如果有右孩子，则左孩子入队
+			Q.push(x->rc_);	
 	}
 }
 #endif

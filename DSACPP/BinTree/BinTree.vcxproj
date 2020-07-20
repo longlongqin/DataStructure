@@ -141,8 +141,10 @@
   <ItemGroup>
     <ClInclude Include="BinNode.h" />
     <ClInclude Include="BinTree.h" />
+    <ClInclude Include="reconsitution.h" />
     <ClInclude Include="release.h" />
     <ClInclude Include="StateJudge.h" />
+    <ClInclude Include="traversal.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BinNode.cpp" />
