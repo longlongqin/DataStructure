@@ -14,9 +14,8 @@
 
 # 注意
 
-本系列中，所有的区间均为**左闭右开**，即：`[a, b)`
-
-
+1. 本系列中，所有的区间均为**左闭右开**，即：`[a, b)`
+2. 在所`#include "xxx.h"`的时候，如果该模板类中的成员函数的 定义(实现)是分开实现的（在`xxx.cpp`中实现的），则理应加上`#include "xxx.cpp"`（如果已经将该`xxx.cpp`文件包含在 `IncludedImplementCpp.h`之类的文件中，则只需`#include "IncludedImplementCpp.h"`即可。）
 
 # 第二章 向量
 
