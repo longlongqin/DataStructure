@@ -2,6 +2,7 @@
 #define DSACPP_DINTREE_RECONSITUTION_H
 /*二叉树的重构*/
 #include "BinTree.h"
+#include "IncludedImplementCpp.h"
 #include <vector>
 using namespace std;
 

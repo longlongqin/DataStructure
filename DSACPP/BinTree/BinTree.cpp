@@ -1,4 +1,5 @@
 #include "BinTree.h"
+#include "IncludedImplementCpp.h"
 #include "release.h"
 
 //高度更新

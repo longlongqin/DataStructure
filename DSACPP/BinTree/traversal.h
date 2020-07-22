@@ -1,6 +1,8 @@
 #ifndef DSACPP_BINTREE_TRAVERSAL_H
 #define DSACPP_BINTREE_TRAVERSAL_H
 #include "BinTree.h"
+#include "IncludedImplementCpp.h"
+
 #include <stack>
 #include <queue>
 
