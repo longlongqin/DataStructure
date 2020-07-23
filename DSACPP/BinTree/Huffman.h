@@ -1,33 +1,44 @@
-#ifndef DSACPP_BINTREE_HUFFMAN_H
+ï»¿#ifndef DSACPP_BINTREE_HUFFMAN_H
 #define DSACPP_BINTREE_HUFFMAN_H
 
 #include "BinTree.h"
 #include "IncludedImplementCpp.h"
 
-//³¬×Ö·û
-#define N_CHAR (0x80 - 0x20) //ÆäÊµ¾ÍÊÇ¶ÔÓ¦ASCII±íÖĞµÄ£º32(space)~127(DEL)
+//è¶…å­—ç¬¦
+#define N_CHAR (0x80 - 0x20) //å…¶å®å°±æ˜¯å¯¹åº”ASCIIè¡¨ä¸­çš„ï¼š32(space)~127(DEL)
 
-class HuffChar //Huffman³¬×Ö·û
+class HuffChar //Huffmanè¶…å­—ç¬¦
 {
-	char ch_; int weight_; //×Ö·û¡¢ÆµÂÊ(weightÈ¨ÖØ)
+	char ch_; int weight_; //å­—ç¬¦ã€é¢‘ç‡(weightæƒé‡)
 
 	HuffChar(char ch ='^', int weight = 0 )
 		: ch_(ch), weight_(weight)
 	{}
 
-	//±È½ÏÆ÷¡¢ÅĞ¶ÏÆ÷
-	bool operator<(const HuffChar& hc)	{ return weight_ > hc.weight_; } //È¨ÖØ±È½Ï
+	//æ¯”è¾ƒå™¨ã€åˆ¤æ–­å™¨
+	bool operator<(const HuffChar& hc)	{ return weight_ > hc.weight_; } //æƒé‡æ¯”è¾ƒ
 	bool operator==(const HuffChar& hc) { return weight_ == hc.weight_; }
 };
 
 
-//Huffman±àÂëÊ÷£¨ÓÉBinTreeÅÉÉú£¬½ÚµãÀàĞÍÎªHuffChar£©
+//Huffmanç¼–ç æ ‘ï¼ˆç”±BinTreeæ´¾ç”Ÿï¼ŒèŠ‚ç‚¹ç±»å‹ä¸ºHuffCharï¼‰
 #define HuffTree	BinTree<HuffChar>
 
-//HuffmanÉ­ÁÖ£¨Ê¹ÓÃListÄ£°åÀàÊµÏÖ£©
+//Huffmanæ£®æ—ï¼ˆä½¿ç”¨Listæ¨¡æ¿ç±»å®ç°ï¼‰
 #include "../List/List.h"
 #include "../List/member_function_implement.h"
-typedef List<HuffTree*> HuffForest; //HuffmanÉ­ÁÖ
+typedef List<HuffTree*> HuffForest; //Huffmanæ£®æ—
+
+//HuffmanäºŒè¿›åˆ¶ç¼–ç 
+#include "Bitmap.h"
+typedef Bitmap Huffman;
+
+//Huffmanç¼–ç è¡¨ï¼ˆç•™ä¸ªå‘è¿™é‡Œä½¿ç”¨HashTableå®ç°ï¼Œå¾…åˆ°é‚£æ—¶å†è¡¥å…¨HashTableçš„å®ç°â­â­ï¼‰
+#include "../HashTable/HashTable.h" //ç”¨HashTableå®ç°ï¼ˆè®°å¾—å›æ¥è¡¥å…¨å®ƒï¼‰
+typedef HashTable<char, char*> HuffTable; //Huffmanç¼–ç è¡¨
+
+
+
 
 
 #endif

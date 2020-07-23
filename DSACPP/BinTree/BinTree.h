@@ -2,6 +2,7 @@
 #define DSACPP_BINTREE_BINTREE_H
 
 #include "BinNode.h"
+#include "StateJudge.h"
 
 template<class T>
 class BinTree

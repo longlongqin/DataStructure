@@ -141,6 +141,8 @@
   <ItemGroup>
     <ClInclude Include="BinNode.h" />
     <ClInclude Include="BinTree.h" />
+    <ClInclude Include="Bitmap.h" />
+    <ClInclude Include="Huffman.h" />
     <ClInclude Include="reconsitution.h" />
     <ClInclude Include="release.h" />
     <ClInclude Include="StateJudge.h" />

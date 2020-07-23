@@ -1,6 +1,6 @@
 #ifndef DSACPP_BINTREE_BITMAP_H
 #define DSACPP_BINTREE_BITMAP_H
-
+//习题[2-34]
 //位图
 //参考：https://www.cnblogs.com/yuanyb/p/10620729.html
 #include <cstdio>
@@ -105,7 +105,7 @@ public:
 		fclose(fp);
 	}
 
-	char* bits2string(int n) //将当前n位转换为字符串——
+	char* bits2string(int n) //将当前n位转换为字符串 —— ——
 	{
 		expand(n - 1); //此时可能被访问的最高位为 bitmap[n-1]
 		char* s = new char[n + 1]; s[n] = '\0'; //字符串所占空间，由上层调用者负责释放
