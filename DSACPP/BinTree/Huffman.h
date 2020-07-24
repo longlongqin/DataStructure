@@ -39,6 +39,31 @@ typedef HashTable<char, char*> HuffTable; //Huffman编码表
 
 
 
+/*其他函数*/
+//字符出现频率统计
+int* statistics(char* sample_text_file);
+
+//初始化Huffman森林
+HuffForest* initForest(int* freq); //根据频率统计表，为每一个字符创建为一棵树
 
 
+//构造Huffman编码树
+//1. 找出最小权重的(超)字符
+HuffTree* minHChar(HuffForest* forest); //在Huffman森林中找到权重最小的（超）字符（此时每个字符都是一个树）
+//2. 生成Huffman编码树
+HuffTree* generateTree(HuffForest* forest);
+
+
+//生成Huffman编码表
+//1. 通过遍历获取各字符的编码
+static void generateCT(Bitmap* code, int length, HuffTable* table, BinNodePosi<HuffChar> v); //通过遍历获取各字符的编码
+// 2. 将各字符编码同一存入以散列表实现的编码表中
+HuffTable* generateTable(HuffTree* tree);
+
+
+//编码
+int encode(HuffTable* table, Bitmap* codestring, char* s);
+
+//解码
+void decode(HuffTree* tree, Bitmap* code, int n);
 #endif
