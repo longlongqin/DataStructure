@@ -1,5 +1,5 @@
-#ifndef DSACPP_BINTREE_BINNODE_H
-#define DSACPP_BINTREE_BINNODE_H
+#ifndef DSACPP_BINTREE_BINNODE_H_
+#define DSACPP_BINTREE_BINNODE_H_
 
 template<class T>	class BinNode; //为了使用BinNode类，需要前置声明
 template<typename T>	using BinNodePosi = BinNode<T>*; //节点位置

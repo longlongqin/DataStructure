@@ -1,5 +1,5 @@
-#ifndef DSACPP_BINTREE_BINTREE_H
-#define DSACPP_BINTREE_BINTREE_H
+#ifndef DSACPP_BINTREE_BINTREE_H_
+#define DSACPP_BINTREE_BINTREE_H_
 
 #include "BinNode.h"
 #include "StateJudge.h"

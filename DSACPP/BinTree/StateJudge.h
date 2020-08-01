@@ -1,5 +1,5 @@
-#ifndef DSCAPP_BINTREE_STATEJUDGE_H
-#define DSCAPP_BINTREE_STATEJUDEG_H
+#ifndef DSCAPP_BINTREE_STATEJUDGE_H_
+#define DSCAPP_BINTREE_STATEJUDEG_H_
 
 /******************************************************************************************
  * BinNode状态与性质的判断

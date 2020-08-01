@@ -1,5 +1,5 @@
-#ifndef DSACPP_DINTREE_RECONSITUTION_H
-#define DSACPP_DINTREE_RECONSITUTION_H
+#ifndef DSACPP_DINTREE_RECONSITUTION_H_
+#define DSACPP_DINTREE_RECONSITUTION_H_
 /*二叉树的重构*/
 #include "BinTree.h"
 #include "IncludedImplementCpp.h"

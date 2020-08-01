@@ -1,5 +1,5 @@
-#ifndef DSACPP_BINTREE_RELEASE_H
-#define DSACPP_BINTREE_RELEASE_H
+#ifndef DSACPP_BINTREE_RELEASE_H_
+#define DSACPP_BINTREE_RELEASE_H_
 /********************************************************************************
 *                                                                               *
 *                                                                               *

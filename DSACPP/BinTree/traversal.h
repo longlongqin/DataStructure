@@ -1,5 +1,5 @@
-#ifndef DSACPP_BINTREE_TRAVERSAL_H
-#define DSACPP_BINTREE_TRAVERSAL_H
+#ifndef DSACPP_BINTREE_TRAVERSAL_H_
+#define DSACPP_BINTREE_TRAVERSAL_H_
 #include "BinTree.h"
 #include "IncludedImplementCpp.h"
 

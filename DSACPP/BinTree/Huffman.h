@@ -1,5 +1,5 @@
-﻿#ifndef DSACPP_BINTREE_HUFFMAN_H
-#define DSACPP_BINTREE_HUFFMAN_H
+﻿#ifndef DSACPP_BINTREE_HUFFMAN_H_
+#define DSACPP_BINTREE_HUFFMAN_H_
 
 #include "BinTree.h"
 #include "IncludedImplementCpp.h"
