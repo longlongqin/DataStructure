@@ -2,6 +2,8 @@
 #define DSACPP_GRAPH_GRAPHMATRIX_H_
 /*邻接矩阵*/
 
+#include <vector>
+
 typedef enum { UNDISCOVERED, DISCOVERED, VISITED } VStatus; //顶点状态
 
 template<class Tv>
@@ -36,10 +38,35 @@ public:
 		:data_(d), weight_(w), status_(UNDETERMINED)
 	{}
 
-public:
+public: //简单起见，将其设置为public
 	Te data_; // 数据
 	int weight_; // 权重
 	EStatus status_; //类型
+};
+
+
+template<class Tv, class Te> //顶点类型、变类型
+class GraphMatrix : public Graph<Tv, Te> //基于向量，以邻接矩阵实现的图
+{
+public:
+	GraphMatrix()
+	{
+		n_ = e_ = 0;
+	}
+
+	~GraphMatrix()
+	{
+		for (int i = 0; i < n_; i++) //所有动态创建的
+			for (int j = 0; j < n_; j++)  //边记录
+				delete E[i][j];  //逐条清除
+	}
+
+public:
+
+
+private:
+	vector< Vertex<Tv>> V; //顶点集
+	vector<vector<Edge<Te>*>> E; //边集 （二维向量，恰好就是一个邻接矩阵）
 };
 
 #endif
