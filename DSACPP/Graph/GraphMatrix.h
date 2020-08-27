@@ -64,7 +64,7 @@ public:
 public:
 
 
-private:
+public: //为了简单起见，将其设为可以直接访问的形式
 	vector< Vertex<Tv>> V; //顶点集
 	vector<vector<Edge<Te>*>> E; //边集 （二维向量，恰好就是一个邻接矩阵）
 };
