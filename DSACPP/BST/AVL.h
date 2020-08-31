@@ -23,7 +23,7 @@ public:
 * v：为p的孩子；【v有可能与x是同一个节点】
 ****/
 template<typename T>
-BinNodePosi<T> tallerChild(BinNodePosi<T> x)
+BinNodePosi<T> tallerChild(BinNodePosi<T> g)
 {
 	if (stature(x->lc_) > stature(x->rc_)) //左高
 		return x->lc_;
