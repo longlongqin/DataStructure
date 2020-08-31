@@ -15,9 +15,9 @@ protected:
 	BinNodePosi<T> hot_; // “命中”的节点 的父节点
 
 	// 在后续课程会用到，这里暂且只声明，先不定义。
-	BinNodePosi<T> connect34(BinNodePosi<T>, BinNodePosi<T>, BinNodePosi<T>
+	BinNodePosi<T> connect34(BinNodePosi<T>, BinNodePosi<T>, BinNodePosi<T>,
 		BinNodePosi<T>, BinNodePosi<T>, BinNodePosi<T>, BinNodePosi<T>); //按照“3+4”结构，连接3个节点及四棵子树
-	BinNodePosi<T> rotateAt(BinNodePosi<T> x); //对x 及其父亲，做统一的旋转调整
+	BinNodePosi<T> rotateAt(BinNodePosi<T> v); //对v 及其父亲，做统一的旋转调整
 };
 
 #endif
