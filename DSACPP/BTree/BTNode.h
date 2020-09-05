@@ -1,5 +1,5 @@
-#ifndef DSACPP_BTREE_BTREE_H_
-#define DSACPP_BTREE_BTREE_H_
+#ifndef DSACPP_BTREE_BTNODE_H_
+#define DSACPP_BTREE_BTNODE_H_
 /*多路搜索树：B-树（B树）*/
 /* B树的节点 */
 
