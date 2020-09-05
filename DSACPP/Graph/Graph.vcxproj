@@ -140,8 +140,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="BFS.h" />
+    <ClInclude Include="Dijkstra.h" />
+    <ClInclude Include="Floyd.h" />
     <ClInclude Include="Graph.h" />
     <ClInclude Include="GraphMatrix.h" />
+    <ClInclude Include="Kruskal.h" />
     <ClInclude Include="PFS.h" />
     <ClInclude Include="Prim.h" />
   </ItemGroup>
