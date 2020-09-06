@@ -18,5 +18,8 @@
     <ClInclude Include="BTNode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
