@@ -2,6 +2,24 @@
 #define DSACPP_BTREE_BTREE_H_
 /*B-树 的模板类*/
 
+/*
+* 注意：下面代码中的vector.h中的函数：insert()、与 remove()函数的原形如下：（详细要看dsacpp（邓俊辉老师写得））
+*
+template <typename T> //将e作为秩为r元素插入
+Rank Vector<T>::insert ( Rank r, T const& e ) { //assert: 0 <= r <= size
+   expand(); //若有必要，扩容
+   for ( int i = _size; i > r; i-- ) _elem[i] = _elem[i-1]; //自后向前，后继元素顺次后移一个单元
+   _elem[r] = e; _size++; //置入新元素并更新容量
+   return r; //返回秩
+}
+*
+template <typename T> T Vector<T>::remove ( Rank r ) { //删除向量中秩为r的元素，0 <= r < size
+   T e = _elem[r]; //备份被删除元素
+   remove ( r, r + 1 ); //调用区间删除算法，等效于对区间[r, r + 1)的删除
+   return e; //返回被删除元素
+}
+*/
+
 #include <cmath> //ceil()
 #include "BTNode.h"
 
