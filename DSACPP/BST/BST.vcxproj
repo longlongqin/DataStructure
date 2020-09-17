@@ -143,6 +143,7 @@
     <ClInclude Include="BST.h" />
     <ClInclude Include="Entry.h" />
     <ClInclude Include="IncludeCPP.h" />
+    <ClInclude Include="RedBlack.h" />
     <ClInclude Include="Splay.h" />
   </ItemGroup>
   <ItemGroup>
